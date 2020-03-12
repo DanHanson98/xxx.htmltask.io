@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="index.html" class="w3-button w3-bar-item">Home</a>
+  <a href="facilities.html" class="w3-button w3-bar-item">Facilities</a>
+  <a href="find.html" class="w3-button w3-bar-item">How to find us</a>
+  <a href="Rates.html" class="w3-button w3-bar-item">Rates</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="gym1.jpeg" style="width:100%">
+  <img class="mySlides" src="gym2.jpg" style="width:100%">
+  <img class="mySlides" src="gym3.jpg" style="width:100%">
+</section>
+
+<script>// Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+</script>
+
+<section class="w3-container w3-center" style="max-width:600px">
+  <h2 class="w3-wide">BINTANG FITNESS CENTRE</h2>
+  <p class="w3-opacity"><i>We will keep you fit!</i></p>
+</section>
+
+<section class="w3-container w3-content w3-center" style="max-width:600px">
+<p class="w3-justify">
+Welcome to the website for Bintang Fitness Centre.
+Our club provides the perfect destinations to stay fit and healthy as a family. Facilities include state-of-the-art gyms, heated indoor and outdoor pools, top-class racquets facilities, well-equipped group exercise studios and luxurious spas. And if you need a place to meet with friends or enjoy a bite to eat, our clubs also feature large and inviting spaces to work, relax and socialise</p>
+</section>
+
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>Classes</p>
+    <img src="classes.jpg" alt="classes" style="width:100%">
+<p>fitness classes available for booking</p>  
+
+</article>
+  <article class="w3-third">
+    <p>Personal Training</p>
+    <img src="personal.jpg" alt="Personal training" style="width:100%">
+    <p>personal training programmes available with a range of male and female personal trainers</p>
+  </article>
+  <article class="w3-third">
+    <p>Free workout</p>
+    <img src="workout.jpg" alt="Free workouts" style="width:100%">
+ <p>Follow your own programme using our extensive range of machines and free weights</p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  
+</footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</body>
+</html>
